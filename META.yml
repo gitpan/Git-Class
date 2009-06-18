@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Git-Class
-version:            0.01
+version:            0.02
 abstract:           a simple git wrapper to capture output
 author:
     - Kenichi Ishigaki <ishigaki@cpan.org>
