@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Git-Class
-version:            0.04
+version:            0.05
 abstract:           a simple git wrapper to capture output
 author:
     - Kenichi Ishigaki <ishigaki@cpan.org>
@@ -9,25 +9,25 @@ distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Any::Moose:           0.09
-    Capture::Tiny:        0
-    File::Spec:           0
-    Module::Find:         0
-    Mouse:                0.23
-    Path::Extended:       0.12
     Test::Classy:         0.07
     Test::More:           0.47
     Test::UseAllModules:  0.12
-    URI::Escape:          0
+requires:
+    Any::Moose:      0.09
+    Capture::Tiny:   0
+    File::Spec:      0
+    Module::Find:    0
+    Mouse:           0.23
+    MRO::Compat:     0
+    Path::Extended:  0.12
+    URI::Escape:     0
 resources:
     repository:  http://github.com/charsbar/git-class
 no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.52
+generated_by:       ExtUtils::MakeMaker version 6.56
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4
