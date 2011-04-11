@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Git-Class
-version:            0.07
+version:            0.08
 abstract:           a simple git wrapper to capture output
 author:
     - Kenichi Ishigaki <ishigaki@cpan.org>
@@ -21,6 +21,7 @@ requires:
     MRO::Compat:     0
     Path::Extended:  0.12
     Scope::Guard:    0
+    Try::Tiny:       0
     URI::Escape:     0
 resources:
     repository:  http://github.com/charsbar/git-class
