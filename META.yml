@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Git-Class
-version:            0.10_01
+version:            0.11
 abstract:           a simple git wrapper to capture output
 author:
     - Kenichi Ishigaki <ishigaki@cpan.org>
@@ -13,17 +13,18 @@ build_requires:
     Test::More:           0.47
     Test::UseAllModules:  0.12
 requires:
-    Any::Moose:      0.09
-    Capture::Tiny:   0
-    Carp::Clan:      0
-    File::Spec:      0
-    Module::Find:    0
-    Mouse:           0.23
-    MRO::Compat:     0
-    Path::Extended:  0.12
-    Scope::Guard:    0
-    Try::Tiny:       0
-    URI::Escape:     0
+    Any::Moose:          0.09
+    Capture::Tiny:       0
+    Carp::Clan:          0
+    File::Spec:          0
+    Module::Find:        0
+    Mouse:               0.23
+    MRO::Compat:         0
+    Path::Extended:      0.19
+    Scope::Guard:        0
+    String::ShellQuote:  0
+    Try::Tiny:           0
+    URI::Escape:         0
 resources:
     repository:  http://github.com/charsbar/git-class
 no_index:
