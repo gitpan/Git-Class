@@ -4,6 +4,8 @@ use Module::Find ();
 use Any::Moose; with (Module::Find::findsubmod 'Git::Class::Role');
 use MRO::Compat;
 
+has no_capture => (is => 'rw');
+
 has '_git' => (
   is        => 'rw',
   isa       => 'Str|Undef',
@@ -114,6 +116,10 @@ Returns a captured text in the scalar context, or split lines in the list contex
 Note that if the C<< $object->is_verbose >>, the captured output is printed as well. This may help if you want to issue interactive commands.
 
 If you want to trace commands, set C<GIT_CLASS_TRACE> environmental variable to true.
+
+=head2 no_capture
+
+is an accessor/mutator to determine if we should use Capture::Tiny to capture the output of git commands. If your web apps hang because of the capturing, set this to true to disable it.
 
 =head1 AUTHOR
 
