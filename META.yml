@@ -1,37 +1,37 @@
---- #YAML:1.0
-name:               Git-Class
-version:            0.12
-abstract:           a simple git wrapper to capture output
+---
+abstract: 'a simple git wrapper to capture output'
 author:
-    - Kenichi Ishigaki <ishigaki@cpan.org>
-license:            perl
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Kenichi Ishigaki <ishigaki@cpan.org>'
 build_requires:
-    Test::Classy:         0.07
-    Test::More:           0.47
-    Test::UseAllModules:  0.12
-requires:
-    Any::Moose:          0.09
-    Capture::Tiny:       0
-    Carp::Clan:          0
-    File::Spec:          0
-    Module::Find:        0
-    Mouse:               0.23
-    MRO::Compat:         0
-    Path::Extended:      0.19
-    Scope::Guard:        0
-    String::ShellQuote:  0
-    Try::Tiny:           0
-    URI::Escape:         0
-resources:
-    repository:  http://github.com/charsbar/git-class
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  Test::Classy: 0.07
+  Test::More: 0.47
+  Test::UseAllModules: 0.12
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Git-Class
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Any::Moose: 0.09
+  Capture::Tiny: 0
+  Carp::Clan: 0
+  File::Spec: 0
+  MRO::Compat: 0
+  Module::Find: 0
+  Mouse: 0.23
+  Path::Extended: 0.19
+  Scope::Guard: 0
+  String::ShellQuote: 0
+  Try::Tiny: 0
+  URI::Escape: 0
+resources:
+  repository: http://github.com/charsbar/git-class
+version: 0.13
