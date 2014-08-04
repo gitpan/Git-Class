@@ -1,14 +1,15 @@
 package Git::Class::Cmd;
 
 use Module::Find ();
-use Any::Moose; with (Module::Find::findsubmod 'Git::Class::Role');
+use Moo; with (Module::Find::findsubmod 'Git::Class::Role');
 use MRO::Compat;
+use Path::Tiny;
 
 has no_capture => (is => 'rw');
 
 has '_git' => (
   is        => 'rw',
-  isa       => 'Str|Undef',
+#  isa       => 'Str|Undef',
   init_arg  => 'exec_path',
   builder   => '_find_git',
 );
@@ -24,13 +25,12 @@ sub _find_git {
   return $file if $file && -f $file;
 
   require Config;
-  require File::Spec;
   my $path_sep = $Config::Config{path_sep} || ';';
 
   foreach my $path ( split /$path_sep/, ($ENV{PATH} || '') ) {
-    return 'git' if -f File::Spec->catfile($path, 'git')
-                 || -f File::Spec->catfile($path, 'git.cmd')
-                 || -f File::Spec->catfile($path, 'git.exe');
+    return 'git' if path($path, 'git')->is_file
+                 || path($path, 'git.cmd')->is_file
+                 || path($path, 'git.exe')->is_file;
   }
   return;
 }
@@ -60,8 +60,6 @@ sub git {
     @args,
   );
 }
-
-__PACKAGE__->meta->make_immutable;
 
 1;
 

@@ -1,8 +1,8 @@
 package Git::Class;
 
-use Any::Moose; extends 'Git::Class::Cmd';
+use Moo; extends 'Git::Class::Cmd';
 
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 1;
 

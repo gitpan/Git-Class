@@ -3,8 +3,8 @@
    "author" : [
       "Kenichi Ishigaki <ishigaki@cpan.org>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150",
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.141520",
    "license" : [
       "perl_5"
    ],
@@ -22,30 +22,26 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::Classy" : "0.07",
-            "Test::More" : "0.47",
-            "Test::UseAllModules" : "0.12"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "ExtUtils::MakeMaker::CPANfile" : "0.06"
          }
       },
       "runtime" : {
          "requires" : {
-            "Any::Moose" : "0.09",
-            "Capture::Tiny" : 0,
-            "Carp::Clan" : 0,
-            "File::Spec" : 0,
-            "MRO::Compat" : 0,
-            "Module::Find" : 0,
-            "Mouse" : "0.23",
-            "Path::Extended" : "0.19",
-            "Scope::Guard" : 0,
-            "String::ShellQuote" : 0,
-            "Try::Tiny" : 0,
-            "URI::Escape" : 0
+            "Capture::Tiny" : "0",
+            "Carp::Clan" : "0",
+            "MRO::Compat" : "0",
+            "Module::Find" : "0",
+            "Moo" : "0",
+            "Path::Tiny" : "0",
+            "Scope::Guard" : "0",
+            "String::ShellQuote" : "0",
+            "Try::Tiny" : "0",
+            "URI::Escape" : "0"
          }
       }
    },
@@ -55,5 +51,5 @@
          "url" : "http://github.com/charsbar/git-class"
       }
    },
-   "version" : "0.13"
+   "version" : "0.14"
 }
