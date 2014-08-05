@@ -22,7 +22,9 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "0",
+            "Test::More" : "0.98",
+            "Test::UseAllModules" : "0.12"
          }
       },
       "configure" : {
@@ -51,5 +53,5 @@
          "url" : "http://github.com/charsbar/git-class"
       }
    },
-   "version" : "0.14"
+   "version" : "0.15"
 }

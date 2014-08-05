@@ -4,6 +4,8 @@ author:
   - 'Kenichi Ishigaki <ishigaki@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: '0'
+  Test::More: '0.98'
+  Test::UseAllModules: '0.12'
 configure_requires:
   ExtUtils::MakeMaker::CPANfile: '0.06'
 dynamic_config: 0
@@ -30,4 +32,4 @@ requires:
   URI::Escape: '0'
 resources:
   repository: http://github.com/charsbar/git-class
-version: '0.14'
+version: '0.15'

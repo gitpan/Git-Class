@@ -1,5 +1,8 @@
 Revision history for Git-Class
 
+0.15 2014/08/05
+  - fixed cpanfile
+
 0.14 2014/08/04
   - no new features
   - modernized with Moo and Path::Tiny; dropped a few dependencies
